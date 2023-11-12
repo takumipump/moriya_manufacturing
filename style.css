@@ -1,0 +1,645 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size:0.9em;
+    color: #333333;
+    background-color:white;
+}
+
+
+
+a:hover{
+    opacity:0.6;
+}
+.container{
+    width: 1100px;
+    margin:0 auto;
+}
+
+
+header {
+    background-color: blue;
+    height:60px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    position: fixed;
+    width:100%;
+    z-index: 100;
+   
+    
+}
+
+.menu li {
+    display: inline-block;
+    padding: 20px;
+    width:120px;
+    
+}
+.menu li a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #ffffff;
+    text-align: center;
+}
+
+input{
+    display: none;
+}
+
+.header_title_area{
+    color:#ffffff;
+    line-height: 60px;
+    font-size:1.8rem;
+}
+.navtext{
+    color:#ffffff;
+    line-height: 60px;
+    font-size:1.8rem;
+    margin-left: 20px;
+   
+}
+
+.header_access_text{
+    width: 180px;
+    color:#ffffff;
+    text-align:center;
+    padding-top: 4px;
+    
+    
+}
+
+.header_access_text p{
+    margin:0;
+}
+
+.header_phone_num{
+    font-size:1.7rem;
+    
+}
+
+.main_visual_area{
+    text-align: center;
+    background-color:white;
+}
+
+
+.images_wrapper{
+    width:970px;
+    height:735px;
+    position:relative;
+    margin:0 auto;
+    padding: 0;
+    z-index: 0;
+}
+
+.image_below{
+    z-index:0;
+    width: 970px;
+    height:800px;
+    top:100;
+    left:100;
+    background-color:#140704;
+}
+
+.image_above{
+    z-index: 0;
+    width: 970px;
+    height:700px;
+    position: absolute;
+    top:100;
+    left:0;
+    opacity:0;
+    transition: opacity 0.9s linear;
+}
+.image_above:hover{
+    opacity:1;
+    transition: opacity 1.2s linear;
+}
+.global_navi{
+    background-color: white;
+    padding: 6px;
+}
+
+.navi_items_wrapper{
+    display:flex;
+    gap: 2px 6px;
+}
+
+.global_navi a{
+    display:block;
+    width: 280px;
+    height:48px;
+    line-height: 48px;
+    border-radius:30px;
+    background-color: red;
+    color:white;
+    text-align: center;
+    text-decoration: none;/*下線消す*/
+    font-size: larger;
+}
+section h1{
+    font-size: 1.8rem;
+    text-align: center;/*engraving about company 文字*/
+}
+
+.concept_area{
+    margin-top:150px;
+    line-height:1.8;
+    padding-bottom:80px;/*about company の下間隔*/
+    border-bottom: #140704 dashed 1px;
+    
+}
+.concept_area-text{
+    font-style: normal;
+    text-align: justify;
+    word-break: break-all;
+    
+}
+
+
+/*画像*/
+.special_content_wrapper_flex{
+    text-align: center;
+    margin-top: 100px;
+    /*写真の間隔*/
+    margin-bottom:200px;/*写真下の間隔*/
+
+    
+}
+
+
+
+
+.sample ul{
+    display: flex;
+    overflow-x: scroll;
+    margin: 0;        
+    padding: 0;
+}
+.sample li{
+    min-width: 30%;
+    margin: 10px;        
+    padding: 0;
+    list-style: none;
+}
+.special_area {
+    font-size:1.2rem;
+    border-bottom:#333333 solid 1px;
+    margin-bottom:4px;
+    margin-top: 50px;
+
+    
+}
+
+.special_area_text{
+    position:relative;
+}
+
+.special_menu_price{
+    text-align:right;
+    margin-top:4px;
+    font-style: oblique;
+    font-weight:bold;
+}
+.to_sweets_link{
+    position:absolute;
+    bottom:0;
+    left:100;
+    right:0;
+    background:#1f6421  no-repeat right center;
+    background-size:20px;
+    color:#ffffff;
+    width:240px;
+    line-height: 40px;
+    border:none;
+    border-radius: 20px;
+}
+.to_top_link{
+    text-align: right;
+}
+.to_top_link a{
+    background: url('../images/to_top1.svg') no-repeat left center;
+    padding-left: 24px;
+    text-decoration: none;
+    color:#1e320a
+}
+/*パソコン　スマホ分ける*/
+.for-pc { display:block; }
+.for-sp { display:none; }
+
+.special_area img{
+    width:320px;
+    margin:20px
+}
+
+.access_area{
+    margin:40px 60px;
+    padding:40px;
+    text-align:center;
+}
+.access_area table{
+    border-collapse: collapse;
+    width:80%;
+    margin:0 auto 40px;
+    text-align: left;
+} 
+th,td{
+    padding:8px;
+    border:solid 1px blue;
+}
+tr:nth-of-type(even) th,tr:nth-of-type(even) td{
+    background-color: red;
+}
+tr:nth-of-type(odd) th,tr:nth-of-type(odd) td{
+    background-color: yellow;
+}
+
+
+aside h1{
+    font-size:1.4rem;
+    text-align:center;
+}
+.inquirty_area{
+    width:760px;
+    margin:60px auto;
+    padding:30px 20px;
+    background-color:#1f6421;
+    border-radius:20px;
+}
+.inquiry_form{
+    width:640px;
+    margin:0 auto;
+}
+.inquiry_form dt{
+    font-weight:bold;
+    line-height:3rem;
+}
+.inquiry_form dd{
+    margin-top:-3rem ;
+    line-height:3rem;
+    margin-left: 12rem;
+}
+input[type="text"],input[type="email"]{
+    width:60%;
+    padding:6px;
+}
+textarea{
+    width:100%;
+}
+.form_btn_area{
+    text-align:center;
+}
+.form_submit_btn{
+    background:#225588;
+    color:#ffffff;
+    border-radius:10px;
+    padding:20px 60px;
+    border:none;
+}
+.form_submit_btn:hover{
+    opacity:0.6;
+}
+.to_privacy{
+    text-align: right;
+}
+.to_privacy a{
+    text-decoration: none;
+    color:#333333
+}
+
+.footer-001 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 25px 10px 10px;
+    background-color: #2589d0;
+}
+
+.footer-001__logo {
+    width: 130px;
+    height: 30px;
+}
+
+.footer-001__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 1.5em;
+    list-style-type: none;
+    margin: 0 0 .5em;
+    padding: .5em;
+}
+
+.footer-001__link {
+    color: #fff;
+    font-weight: 200;
+    text-decoration: none;
+}
+
+.footer-001__copyright {
+    margin: 0;
+    color: #ffffffb3;
+    font-weight: 200;
+    font-size: .8em;
+}
+
+@media screen and (max-width:500px) {
+
+    .for-pc { display:none; }
+    .for-sp { display:block; }
+    body {
+        margin: 0;
+        font-family: "Futura", Helvetica, sans-serif;
+        padding-top: 55px;
+      }
+      
+    :root {
+        --background-navbar:aqua;
+        
+      }
+      
+      .header {
+        background: var(--background-navbar);
+        position: fixed;
+        width: 100%;
+        height: 55px;
+        top: 0;
+        z-index: 100;
+      }
+      
+      /* Nav items */
+      .menu {
+        list-style: none;
+        position: absolute;
+        width: 100%;
+        height: auto;
+        top: 0;
+        margin-top: 52px;
+        padding: 0 0 10px 0;
+        clear: both;
+        background: var(--background-navbar);
+        transition: 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
+        transform: scale(1, 0);
+        transform-origin: top;
+      }
+      
+      /* Hamburger menu button */
+      .menu-btn:checked ~ .menu {
+        transform: scale(1, 1);
+        transform-origin: top;
+        transition: 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
+      }
+      
+      /* Hamburger menbu text */
+      .menu a {
+        text-decoration: none;
+        font-weight: 500;
+        letter-spacing: 2px;
+        font-size: 16px;
+        text-transform: capitalize;
+        color: white;/*開いた時の文字*/
+        opacity: 0;
+        transition: 0.5s;
+      }
+      
+      .menu li {
+      
+        padding: 15px 0;
+        top:0;
+        padding-top: 0;
+        margin: 0 54px;
+        opacity: 0;
+        transition: 0.5s;
+      }
+      
+      .menu-btn:checked ~ .menu a,
+      .menu-btn:checked ~ .menu li {
+        opacity: 1;
+        transition: 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.2s;
+      }
+      
+      .menu-btn {
+        display: none;
+      }
+      
+      .menu-icon {
+        display: inline-block;
+        position: relative;
+        cursor: pointer;
+        padding: 24px 14px;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      }
+      
+      .navicon {
+        background: white;/*真ん中の線*/
+        display: block;
+        height: 3px;
+        width: 26px;
+        position: relative;
+        transition: 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
+      
+      }
+      
+      .navicon:before,
+      .navicon:after {
+        content: "";
+        display: block;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        background: white;
+        transition: 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
+      }
+      
+      .navicon:before {
+        top: 9px;
+      }
+      
+      .navicon:after {
+        bottom: 9px;
+      }
+      
+      /* Hamburger Menu Animation Start */
+      .menu-btn:checked ~ .menu-icon .navicon:before {
+        transform: rotate(-45deg);
+      }
+      
+      .menu-btn:checked ~ .menu-icon .navicon:after {
+        transform: rotate(45deg);
+      }
+      
+      .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before {
+        top: 0;
+      }
+      .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+        bottom: 0;
+      }
+      
+      .menu-btn:checked ~ .menu-icon .navicon {
+        background: rgba(0, 0, 0, 0);
+        transition: 0.2192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
+      }
+      /* Hamburger Menu Animation End */
+      
+      /* Navbar Container */
+      .navtext-container {
+        width: 100%;
+        height: 40px;
+        position: absolute;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      /* Navbar Text */
+      .navtext {
+        position: absolute;
+        text-transform: uppercase;
+        color:white;
+        letter-spacing: 4px;
+        font-size: 20px;
+      }
+    
+    .container{
+        max-width: 100%;
+    }
+    /*moriya engraving*/
+
+    .header_title_area{
+        color:#ffffff;
+        line-height: 60px;
+        font-size:1rem;
+        margin-left: 5px;
+    }
+    /*電話番号*/
+    .header_phone_num{
+        font-size:1rem;
+        
+    }
+    /*右側テキスト*/
+    .header_access_text{
+        width: 200px;
+        color:#ffffff;
+        text-align:right;
+        padding-top: 4px;
+        margin: 5px;
+        
+    }
+    
+     /*ヘッダーの下*/
+     .main_visual_area{
+        text-align: center;
+        max-width: 100%;
+        background-color:#140704;
+    }
+    .images_wrapper{
+        max-width:100%;
+        height:400px;
+        position:relative;
+        margin: 0;
+        padding: 0;
+        
+    }
+    img{
+        max-width: 100%;
+        height:auto;
+        
+    }
+    .image_below{
+        z-index:0;
+        max-width: 100%;
+        top:0;
+        height: 400px;
+        left:100;
+        background-color:#140704;
+    }
+    .image_above{
+        z-index: 10;
+        max-width: 100%;
+        position: absolute;
+        height: 400px;
+        top:0;
+        left:0;
+        opacity:0;
+        transition: opacity 0.9s linear;
+    }
+    .concept_area{
+        margin-top:50px;
+        line-height:1.8;
+        padding-bottom:80px;/*about company の下間隔*/
+        border-bottom: #140704 dashed 1px;
+        
+    }
+    .concept_area_text{
+        margin-top:30px;
+        margin: 20px;
+        line-height:1.8;
+        padding-bottom:20px;
+        text-align:justify;
+        word-break: break-all;
+    }
+    .p{
+        text-align: justify;
+    }
+
+    .global_navi a{
+        display:block;
+        width: 90px;
+        height:48px;
+        line-height: 48px;
+        border-radius:10px;
+        background-color: red;
+        color:white;
+        text-align: center;
+        text-decoration: none;
+        margin-top: 10px;
+    }
+    
+
+    .sample ul{
+        display: flex;
+        overflow-x: scroll;
+        margin: 0;        
+        padding: 0;
+    }
+    .sample li{
+        min-width: 80%;
+        margin: 10px;        
+        padding: 0;
+        list-style: none;
+    }
+   
+    .access_area{
+        margin:auto;
+        padding:10px;
+        text-align:center;
+    }
+    .access_area table{
+        border-collapse: collapse;
+        max-width:100%;
+        margin:0 auto ;
+        text-align: left;
+    }
+    .iframe-wrap {
+        position: relative;
+        width: 100%;
+        padding-top: 85%; /* = height ÷ width × 100 */
+      }
+      .iframe-wrap iframe {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+      .inquiry_form{
+        max-width:100%;
+        margin:0 auto;
+    }
+    
+
+    
+}
+
