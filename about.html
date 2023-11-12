@@ -1,0 +1,22 @@
+<head>
+    <link rel="stylesheet" href="{{ url_for('static',filename='product.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRODUCT</title>
+    
+    </head>
+    <body>
+      
+      <header class="header">
+        <div class="navtext-container">
+          <div class="navtext">MORIYA ENGRAVING</div>
+        </div>
+          <input type="checkbox" class="menu-btn" id="menu-btn">
+             <label for="menu-btn" class="menu-icon"><span class="navicon"></span></label>
+               <ul class="menu">
+                <li class="top"><a href="{{ url_for('index') }}">HOME</a></li>
+                <li><a href="{{ url_for('diacut') }}">DIACUT</a></li>
+                <li><a href="#projects">PROJACT</a></li>
+                <li><a href="{{ url_for('location') }}">LOCATION</a></li>
+                <li><a href="{{ url_for('about') }}">ABOUT US</a></li>
+              </ul>
+      </header>
