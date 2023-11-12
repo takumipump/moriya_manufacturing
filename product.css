@@ -1,0 +1,489 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size:0.9em;
+    color:black;
+    background-color: white;
+    padding-top: 80px;
+    
+    
+
+}
+ul, ol{
+    list-style:none;
+    padding: 0;
+}
+a:hover{
+    opacity:0.6
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+header {
+    background-color: blue;
+    height:60px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top:0;
+}
+.menu li {
+    display: inline-block;
+    width:120px;
+    padding: 20px;
+    
+}
+.menu li a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+    text-align: center;
+}
+
+input{
+    display: none;
+}
+.navtext{
+    color:#ffffff;
+    line-height: 60px;
+    font-size:1.8rem;
+    margin-left: 20px;
+   
+}
+.global{/*ヘッダーナビ　位置*/
+    position: absolute;
+    top:0;
+    left: 28%;
+    line-height: 1.2;
+    font-size:2em;
+    text-align: center;
+    color:aliceblue;
+    width: 600px;
+    
+    
+    line-height:80px;
+
+}
+
+.global a{/*ヘッダーナビ文字*/
+    color:white;
+    text-decoration: none;
+    
+}
+.container{
+    width:1000px;
+    
+}
+.page_header{/*ヘッダー*/
+    background-color: red;
+    height:80px;
+    top:0;
+    
+}
+
+.page_header h1{
+    margin:0;
+    padding-top: 6px;
+}
+.header_logo{
+    width: 50px;
+}
+
+.global ul{
+    margin: 0;
+}
+.juice img{
+    
+    width: 300px;
+    height:400px;
+    margin: 30px;
+    margin-bottom: 80px;
+    margin-top: 30px;
+   
+}
+.pic_frame {
+    display: inline-block;
+    text-align: center;
+    margin:20px;
+
+    
+    
+  }
+.aaa{
+  text-align: center;
+  font-size:1.5rem;
+}
+p{
+  color:black;
+  margin:10px;
+  font-size:1.5rem;
+  text-align: justify;
+  word-break: break-all
+  
+}
+  
+div{
+    text-align: center;
+    
+    
+}
+h1{
+    margin-left: 20px;
+    text-decoration: none;
+    color:black;
+    font-size:2rem;
+    margin-top: 5%;
+    font-style: Georgia;
+    text-align: center;
+}
+
+h2{
+  margin:20px;
+  margin-top: 50px;
+}
+
+
+.access_area{
+    margin:40px 60px;
+    padding:40px;
+    text-align:center;
+}
+.access_area table{
+    border-collapse: collapse;
+    width:60%;
+    margin:0 auto 40px;
+    text-align: left;
+} 
+th,td{
+    padding:8px;
+    border:solid 1px black;
+}
+tr:nth-of-type(even) th,tr:nth-of-type(even) td{
+    background-color: yellowgreen;
+}
+tr:nth-of-type(odd) th,tr:nth-of-type(odd) td{
+    background-color: yellow;}
+  
+    aside h1{
+      font-size:1.4rem;
+      text-align:center;
+  }
+  .inquirty_area{
+      width:760px;
+      margin:60px auto;
+      padding:30px 20px;
+      background-color:#1f6421;
+      border-radius:20px;
+  }
+  .inquiry_form{
+      width:640px;
+      margin:0 auto;
+  }
+  .inquiry_form dt{
+      font-weight:bold;
+      line-height:3rem;
+  }
+  .inquiry_form dd{
+      margin-top:-3rem ;
+      line-height:3rem;
+      margin-left: 12rem;
+  }
+  input[type="text"],input[type="email"]{
+      width:60%;
+      padding:6px;
+  }
+  textarea{
+      width:100%;
+  }
+  .form_btn_area{
+      text-align:center;
+  }
+  .form_submit_btn{
+      background:#225588;
+      color:#ffffff;
+      border-radius:10px;
+      padding:20px 60px;
+      border:none;
+  }
+  .form_submit_btn:hover{
+      opacity:0.6;
+  }
+  .to_privacy{
+      text-align: right;
+  }
+  .to_privacy a{
+      text-decoration: none;
+      color:#333333
+  }
+  
+  .footer-001 {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding: 25px 10px 10px;
+      background-color: #2589d0;
+  }
+  
+  .footer-001__logo {
+      width: 130px;
+      height: 30px;
+  }
+  
+  .footer-001__list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0 1.5em;
+      list-style-type: none;
+      margin: 0 0 .5em;
+      padding: .5em;
+  }
+  
+  .footer-001__link {
+      color: #fff;
+      font-weight: 200;
+      text-decoration: none;
+  }
+  
+  .footer-001__copyright {
+      margin: 0;
+      color: #ffffffb3;
+      font-weight: 200;
+      font-size: .8em;
+  }
+
+  
+
+
+@media screen and (max-width: 450px){
+
+
+body {
+    margin: 0;
+    font-family: "Futura", Helvetica, sans-serif;
+    padding-top: 100px;
+
+  }
+  
+  /* Navbar & Navmenu color */
+  :root {
+    --background-navbar:#0437F2;
+    
+  }
+  
+  .header {
+    background: var(--background-navbar);
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    top: 0;
+  }
+  
+  /* Nav items */
+  .menu {
+    list-style: none;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 0;
+    margin-top: 52px;
+    padding: 0 0 10px 0;
+    clear: both;
+    background: var(--background-navbar);
+    transition: 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
+    transform: scale(1, 0);
+    transform-origin: top;
+  }
+  
+  /* Hamburger menu button */
+  .menu-btn:checked ~ .menu {
+    transform: scale(1, 1);
+    transform-origin: top;
+    transition: 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
+  }
+  
+  /* Hamburger menbu text */
+  .menu a {
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: white;/*開いた時の文字*/
+    opacity: 0;
+    transition: 0.5s;
+  }
+  
+  .menu li {
+  
+    padding: 15px 0;
+    margin: 0 54px;
+    opacity: 0;
+    transition: 0.5s;
+  }
+  
+  .menu-btn:checked ~ .menu a,
+  .menu-btn:checked ~ .menu li {
+    opacity: 1;
+    transition: 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.2s;
+  }
+  
+  .menu-btn {
+    display: none;
+  }
+  
+  .menu-icon {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    padding: 24px 14px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+  
+  .navicon {
+    background: white;/*真ん中の線*/
+    display: block;
+    height: 3px;
+    width: 26px;
+    position: relative;
+    transition: 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
+  }
+  
+  .navicon:before,
+  .navicon:after {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: white;
+    transition: 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
+  }
+  
+  .navicon:before {
+    top: 9px;
+  }
+  
+  .navicon:after {
+    bottom: 9px;
+  }
+  
+  /* Hamburger Menu Animation Start */
+  .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+  
+  .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+  
+  .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before {
+    top: 0;
+  }
+  .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    bottom: 0;
+  }
+  
+  .menu-btn:checked ~ .menu-icon .navicon {
+    background: rgba(0, 0, 0, 0);
+    transition: 0.2192s cubic-bezier(0.04, 0.04, 0.12, 0.96) 0.1008s;
+  }
+  /* Hamburger Menu Animation End */
+  
+  /* Navbar Container */
+  .navtext-container {
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Navbar Text */
+  .navtext {
+    position: absolute;
+    text-transform: uppercase;
+    color:white;
+    letter-spacing: 4px;
+    font-size: 20px;
+  }
+  .juice img{
+        
+    width: 300px;
+    height:400px;
+    margin: 10px;
+    margin-bottom: 20px;
+   
+   
+}
+
+  
+div{
+    text-align: center;
+    
+    margin: 10px;
+    
+}
+h1{
+    text-align: center;
+    text-decoration: none;
+    color:black;
+    font-size:2rem;
+    
+
+
+}
+p{
+  text-align: justify;
+  word-break: break-all
+}
+.access_area{
+    margin:0;
+    padding:0    ;
+    text-align:center;
+}
+.access_area table{
+    border-collapse: collapse;
+    width:80%;
+    margin:0 auto 40px;
+    text-align: left;
+} 
+th,td{
+    padding:8px;
+    border:solid 1px black;
+}
+tr:nth-of-type(even) th,tr:nth-of-type(even) td{
+    background-color: white;
+}
+tr:nth-of-type(odd) th,tr:nth-of-type(odd) td{
+    background-color: white;
+}
+.iframe-wrap {
+    position: relative;
+    width: 100%;
+    padding-top: 85%; /* = height ÷ width × 100 */
+  }
+  .iframe-wrap iframe {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 95%;
+    height: 100%;
+    
+    
+  }
+  .inquiry_form{
+    max-width:100%;
+    margin:10px;
+   
+    
+}
+}
+  
+
+
